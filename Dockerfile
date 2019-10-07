@@ -14,3 +14,4 @@ RUN pip install RSeQC
 RUN apt-get clean all && rm -rf /var/lib/apt/lists/*
 
 # Adding Xenosplit python code
+ADD Xenosplit.py /opt/
