@@ -5,6 +5,15 @@ MAINTAINER saimukund "saimukund@wustl.edu"
 # Adding Xenosplit python code
 ADD Xenosplit.py /opt/
 
+RUN apt-get update -y && apt-get install -y \
+    apt-utils \
+    bzip2 \
+    gcc \
+    make \
+    ncurses-dev \
+    wget \
+    zlib1g-dev
+
 ##############
 #HTSlib 1.3.2#
 ##############
